@@ -43,13 +43,16 @@ npm run dev
 ```
 Se debe ver el siguiente resultado en su consola:
 
+![image](https://github.com/josamaci/Integradora-front/assets/73150508/0a1b583e-e8cb-4617-b238-3e12571fb90b)
+
+
 > [!IMPORTANT]
 > Para empezar a jugar pueden ver este [video](https://www.youtube.com/watch?v=mCdA4bJAGGk).
 
 # Jugando online
 
 > [!WARNING]
-> Para este paso deben de tener descargado Tunnel Cloudflare Zero Trust que se realizo unos [pasos atrás](#tunnel-cloudflare-zero-trust)
+> Para este paso deben de tener descargado Tunnel Cloudflare Zero Trust que se realizó unos [pasos atrás](#tunnel-cloudflare-zero-trust)
 
 Puedes seguir el siguiente tutorial para usar el tunel: 
 
@@ -61,4 +64,4 @@ Este proyecto fue desarrollado por:
 - [Jairo Alcívar](https://github.com/JairoAb). :feelsgood:
 - [José Macías](https://github.com/josamaci). :shipit:
 
-Con la asesoría de 
+Con la asesoría de [Javie Tibau](https://github.com/jtibau) :godmode:

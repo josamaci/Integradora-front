@@ -1,3 +1,5 @@
+> [!CAUTION]
+> Antes de comenzar esta guía sigue los pasos para el [backend](https://github.com/josamaci/Integradora-back).
 
 # Juegos masivos de corta duración
 

@@ -1,0 +1,22 @@
+.user-component {
+  margin: 10px;
+  padding: .3rem;
+  border-radius: .2rem;
+  box-shadow: 0px 1px 4px 0px rgb(0, 0, 0, 0.2);
+  background-color: white;
+}
+
+#clicker {
+  display: none;
+}
+
+#tapping {
+  width: 100%;
+  height: 100vh;
+  transition: all .1s ease-in-out;
+}
+
+#tapping:active{
+  width: 100%;
+  height: 100vh;
+}

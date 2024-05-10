@@ -49,7 +49,7 @@ Se debe ver el siguiente resultado en su consola:
 
 
 > [!IMPORTANT]
-> Para empezar a jugar pueden ver este [video](https://www.youtube.com/watch?v=mCdA4bJAGGk).
+> Para empezar a jugar pueden ver este [video](https://www.youtube.com/watch?v=-ap8isF823Q).
 
 # Jugando online
 
@@ -58,7 +58,7 @@ Se debe ver el siguiente resultado en su consola:
 
 Puedes seguir el siguiente tutorial para usar el tunel: 
 
-[![Demo Video](https://img.youtube.com/vi/mCdA4bJAGGk/maxresdefault.jpg)](https://www.youtube.com/watch?v=mCdA4bJAGGk)
+[Tutorial](https://img.youtube.com/vi/wahtai8h0Uo/maxresdefault.jpg)](https://www.youtube.com/watch?v=wahtai8h0Uo)
 
 ## Créditos
 

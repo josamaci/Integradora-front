@@ -8,10 +8,13 @@ export interface IRefPhaserGame {
 }
 
 interface IProps {
-  currentActiveScene?: (scene_instance: Phaser.Scene) => void
+  currentActiveScene?: (scene_instance: Phaser.Scene) => void,
+  gameStarted: () => void,
+  setBackground: () => void,
+  setTeamsColor: () => void,
 }
 
-export const CaballosGame = forwardRef<IRefPhaserGame, IProps>(function CaballosGame({ currentActiveScene }, ref) {
+export const CaballosGame = forwardRef<IRefPhaserGame, IProps>(function CaballosGame({ currentActiveScene, gameStarted, setBackground, setTeamsColor }, ref) {
   const game = useRef<Phaser.Game | null>(null!);
 
   useLayoutEffect(() => {
@@ -51,10 +54,24 @@ export const CaballosGame = forwardRef<IRefPhaserGame, IProps>(function Caballos
       }
 
     });
+    
+    EventBus.on('start-game', () => {
+      gameStarted()
+    });
+
+    EventBus.on('init-configs', () => {
+      setBackground()
+      setTeamsColor()
+    });
+
     return () => {
       EventBus.removeListener('current-scene-ready');
+      EventBus.removeListener('start-game');
+      EventBus.removeListener('init-configs');
     }
-  }, [currentActiveScene, ref]);
+
+
+  }, [currentActiveScene, gameStarted, setBackground, ref]);
 
   return (
     <div id="game-container"></div>

@@ -1,12 +1,13 @@
 import { Caballos, End } from './scene/Caballos';
 import Phaser from 'phaser';
+import { CONFIG } from '../global.ts';
 
 // Find out more information about the Game Config at:
 // https://newdocs.phaser.io/docs/3.70.0/Phaser.Types.Core.GameConfig
 const config = {
   type: Phaser.AUTO,
-  width: 800,
-  height: 600,
+  width: CONFIG.x,
+  height: CONFIG.y,
   parent: 'game-container',
   scene: [
     Caballos, End

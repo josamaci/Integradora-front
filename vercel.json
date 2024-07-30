@@ -1,0 +1,9 @@
+{
+    "rewrites": [
+      { "source": "/(.*)", "destination": "/" }
+    ],
+    "redirects": [
+      { "source": "/public/(.*)", "destination": "/public/$1", "permanent": true }
+    ]
+  }
+  

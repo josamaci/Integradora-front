@@ -18,7 +18,7 @@ const PlayersList = ({socket}: {socket: Socket}) => {
   }, []);
 
   return (
-    <div className="jugadores-container bg-blue-200 p-2 rounded-md">
+    <div className="jugadores-container bg-blue-200 p-2 rounded-md w-full">
       <h1 className="font-bold text-xl px-1">Jugadores</h1>
       <div className="flex flex-row flex-wrap justify-start">
         {

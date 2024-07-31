@@ -22,7 +22,8 @@ const PlayersList = ({socket}: {socket: Socket}) => {
       <h1 className="font-bold text-xl px-1">Jugadores</h1>
       <div className="flex flex-row flex-wrap justify-start">
         {
-          users.map((user) => <Player key={user['id']} username={user['username']} />)
+          // eslint-disable-next-line @typescript-eslint/no-explicit-any
+          users.map((user:any) => <Player key={user['id']} username={user['username']} team={user.info.teamColor}/>)
         }
       </div>
     </div>

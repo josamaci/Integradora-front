@@ -1,6 +1,7 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
 import { useState } from "react";
 import BarChartComponent from "./BarChartComponent";
+import Player from "./Player";
 
 const options = {
   chartArea: { width: "50%" },
@@ -26,6 +27,8 @@ const PlayerStatisticsComponent = ({ roomInfo }: { roomInfo: any }) => {
   const gameState = roomInfo.gameState;
 
   data.push(...gameState.barData)
+
+  console.log(playerInfo);
 
   if (showLastPage) {
     return (
@@ -59,17 +62,18 @@ const PlayerStatisticsComponent = ({ roomInfo }: { roomInfo: any }) => {
 
     return (
       <div className="w-full h-full flex flex-col items-center justify-center">
+        <Player key={playerInfo['id']} username={playerInfo['username']} team={playerInfo.info.teamColor}/>
         <div className="flex mt-5">
-          <h2>El equipo</h2>
+          <h2>¡El equipo</h2>
           <h1 className={colorStyleH1}>{colorLabel}</h1>
           <h2>gano!</h2>
         </div>
         <div className="flex flex-col items-center my-2">
           <div className={colorBackground}>
-            <img src={colorHorse} alt="Caballo Rojo" />
+            <img src={colorHorse} alt="Caballo" />
           </div>
         </div>
-        <h1>Estadisticas</h1>
+        <h1>Estadísticas</h1>
         <BarChartComponent data={data} options={options} />
         <button
           className="w-1/2 text-center text-white font-bold h-min p-1 m-1 bg-blue-600 rounded"
